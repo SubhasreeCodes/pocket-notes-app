@@ -1,0 +1,68 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 10px;
+    outline: none;
+    position: relative; /* Make sure the modal is the positioning context */
+    min-height: 300px; /* Optional: Ensure there's enough height for the button */
+    color: black;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .create-button {
+    background-color: #08058d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely within the modal */
+    bottom: 20px; /* Distance from the bottom of the modal */
+    right: 20px; /* Distance from the right side of the modal */
+  }
+  
+  .input-textbox {
+    background-color: #fff; /* White background for the text box */
+    color: black; /* Black text color */
+    border: 1px solid #ccc; /* Optional: Light border to define the text box */
+    padding: 10px; /* Add some padding inside the text box */
+    border-radius: 5px; /* Optional: Rounded corners */
+    width: 50%; /* Make the input take up the full width */
+    color: black;
+  }
+  
+  .input-textbox::placeholder {
+    color: black; /* Black placeholder text color */
+  }
+  
